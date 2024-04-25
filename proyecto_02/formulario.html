@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!-- Agregar Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Css/formcss.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="formulario">
+            <h2>Formulario de Consultoría Financiera</h2>
+            <div class="form-group">
+                <label for="nombreCompleto">Nombre Completo:</label>
+                <input type="text" class="form-control" id="nombreCompleto" placeholder="Ingrese su nombre completo"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="nitEmpresa">NIT de la Empresa:</label>
+                <input type="text" class="form-control" id="nitEmpresa" placeholder="Ingrese el NIT de la empresa"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" class="form-control" id="direccion" placeholder="Ingrese la dirección de la empresa"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="nombreEmpresa">Nombre de la Empresa:</label>
+                <input type="text" class="form-control" id="nombreEmpresa" placeholder="Ingrese el nombre de la empresa"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Otro:</label>
+                <textarea class="form-control" id="mensaje" rows="3"
+                    placeholder="Escriba un resumen de la dificultad de su empresa."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+
+        <div class="table-responsive">
+            <h2>Datos Ingresados</h2>
+            <table class="table" id="tablaDatos">
+                <thead>
+                    <tr>
+                        <th>Nombre Completo</th>
+                        <th>NIT Empresa</th>
+                        <th>Dirección</th>
+                        <th>Nombre Empresa</th>
+                        <th>Mensaje Adicional</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Agregar Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Script/formaction.js"></script>
+</body>
+
+</html>
